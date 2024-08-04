@@ -1,9 +1,9 @@
 :root {
-    --main-font-size: 16px;
-    --svg-size: calc(1em - 5px);
+    --main-font-size: 12px;
+    --svg-size: calc(1em - 2px);
     --side-menu: 1em;
+    --logo-svg: calc(1em + 2px);
 }
-
 
 body,
 html {
@@ -15,10 +15,8 @@ html {
 .sidebar,
 .header,
 .main-content {
-    padding: 15px;
+    padding: 10px;
 }
-
-
 
 .page-grid {
     display: grid;
@@ -33,27 +31,44 @@ html {
     grid-column: 1 / 2;
     grid-row: 1 / 3;
     display: grid;
-    gap: 25px;
+    gap: 2em;
     font-weight: 700;
 }
 
-.title {
-    font-size: calc(1em + 5px);
+.sidebar a {
+    margin: 1em calc(1em - 10px) ;
 }
 
-.sidebar a {
+.title {
+    font-size: calc(1em + 2px);
     text-decoration: none;
     display: flex;
+    align-items: center;
+    color: white;
+}
+
+
+.title svg {
+    fill: white;
+    width: var(--logo-svg);
+    height: var(--logo-svg);
+    margin-right: calc(1em - 7px);
+
+}
+
+.side-menu-item {
+    text-decoration: none;
     color: white;
     align-items: center;
     font-size: var(--side-menu);
+    display: flex;
+    gap: 1em;
 }
 
-.sidebar svg {
+.side-menu-item svg {
     width: var(--svg-size);
     height: var(--svg-size);
     fill: white;
-    margin-right: 1em;
 }
 
 .header {
