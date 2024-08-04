@@ -1,7 +1,15 @@
+:root {
+    --main-font-size: 16px;
+    --svg-size: calc(1em - 5px);
+    --side-menu: 1em;
+}
+
+
 body,
 html {
     margin: 0;
     box-sizing: border-box;
+    font-size: var(--main-font-size);
 }
 
 .sidebar,
@@ -10,10 +18,13 @@ html {
     padding: 15px;
 }
 
+
+
 .page-grid {
     display: grid;
     grid-template-columns: 1fr 4fr;
     grid-template-rows: 1fr 3fr;
+    font-family: "Roboto", sans-serif;
 }
 
 .sidebar {
@@ -22,13 +33,29 @@ html {
     grid-column: 1 / 2;
     grid-row: 1 / 3;
     display: grid;
-    gap: 30px;
+    gap: 25px;
+    font-weight: 700;
 }
 
-.side-btn-ctn {
-    display: grid;
-    gap: 10px;
+.title {
+    font-size: calc(1em + 5px);
 }
+
+.sidebar a {
+    text-decoration: none;
+    display: flex;
+    color: white;
+    align-items: center;
+    font-size: var(--side-menu);
+}
+
+.sidebar svg {
+    width: var(--svg-size);
+    height: var(--svg-size);
+    fill: white;
+    margin-right: 1em;
+}
+
 .header {
     background-color: aquamarine;
     grid-row: 1 / 2;
