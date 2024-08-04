@@ -57,7 +57,6 @@ html {
 }
 
 .side-menu-item {
-    text-decoration: none;
     color: white;
     align-items: center;
     font-size: var(--side-menu);
@@ -84,3 +83,50 @@ html {
     margin: 5px;
 }
 
+.header-top-row,
+.header-bottom-row,
+.user {
+    display: flex;
+    align-items: center;
+}
+
+.header-top-row {
+    padding: 10px;
+    gap: 10px;
+}
+
+.header svg {
+    width: var(--svg-size);
+    height: var(--svg-size);
+}
+
+.searchbar {
+    flex-grow: 1;
+    border: none;
+    background-color: #e2e8f0;
+    border-radius: 20px;
+}
+
+.notifications {
+    margin-left: 3em;
+}
+
+.user {
+    margin-left: 1em;
+    font-size: 1em;
+    color: black;
+    font-weight: 500;
+    gap: 8px;
+}
+
+.user-icon {
+    width: 2em;
+    height: 2em;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+
+.side-menu-item,
+.user {
+    text-decoration: none;
+}
