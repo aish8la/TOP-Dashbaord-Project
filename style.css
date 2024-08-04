@@ -74,6 +74,7 @@ html {
     background-color: aquamarine;
     grid-row: 1 / 2;
     grid-column: 2 / 3;
+    padding: 10px 20px;
 }
 
 .main-content {
@@ -90,10 +91,6 @@ html {
     align-items: center;
 }
 
-.header-top-row {
-    padding: 10px;
-    gap: 10px;
-}
 
 .header svg {
     width: var(--svg-size);
@@ -105,6 +102,7 @@ html {
     border: none;
     background-color: #e2e8f0;
     border-radius: 20px;
+    margin-left: calc(1em - 4px);
 }
 
 .notifications {
@@ -129,4 +127,56 @@ html {
 .side-menu-item,
 .user {
     text-decoration: none;
+}
+
+.header-bottom-row {
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.greeting-logo {
+    border: 1px solid black;
+    border-radius: 50%;
+    height: 4em;
+    width: 4em;
+}
+
+.user-greetings {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.greeting-msg {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.greeting-name {
+    font-size: 1.5em;
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+}
+
+.greeting {
+    font-size: calc(1em - 2px);
+    margin: 0;
+}
+
+.buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.buttons button {
+    border: none;
+    background-color: #1992d4;
+    color: white;
+    font-size: 1em;
+    font-weight: 600;
+    width: 5em;
+    height: 2em;
+    border-radius: 20px;
 }
