@@ -133,6 +133,7 @@ html {
     height: 2em;
     border: 1px solid black;
     border-radius: 50%;
+    flex-shrink: 0;
 }
 
 .side-menu-item,
@@ -143,6 +144,7 @@ html {
 .header-bottom-row {
     justify-content: space-between;
     margin-top: 15px;
+    gap: 15px;
 }
 
 .greeting-logo {
@@ -150,6 +152,7 @@ html {
     border-radius: 50%;
     height: 4em;
     width: 4em;
+    flex-shrink: 0;
 }
 
 .user-greetings {
