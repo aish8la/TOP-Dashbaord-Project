@@ -189,9 +189,16 @@ html {
     grid-row: 1fr 1fr;
 }
 
+.card {
+    max-width: 30%;
+}
+
 .projects {
     grid-column: 1 / 2;
     grid-row: 1 / 3;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 30%));
+    grid-template-rows: repeat(2, minmax(150px, 1fr));
 }
 
 .announcements {
@@ -203,7 +210,6 @@ html {
     grid-column: 2 / 3;
     grid-row: 2 / 3;
 }
-
 
 
 
