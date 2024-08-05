@@ -21,7 +21,7 @@ html {
 
 .page-grid {
     display: grid;
-    grid-template-columns: calc(12em + 10px) 4fr;
+    grid-template-columns: calc(10em + 10px) 4fr;
     grid-template-rows: calc(6em + 45px) 3fr;
     font-family: "Roboto", sans-serif;
 }
