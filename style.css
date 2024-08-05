@@ -102,9 +102,17 @@ html {
 }
 
 
+.icon-btn {
+    width:1em;
+    height: 1em;
+    margin: 0;
+    background-color: none;
+    border: none;
+}
+
 .header svg {
-    width: var(--svg-size);
-    height: var(--svg-size);
+    width: 100%;
+    height: 100%;
 }
 
 .searchbar {
@@ -255,4 +263,9 @@ html {
 .card svg {
     width: 100%;
     height: 100%;
+}
+
+.section-title {
+    font-size: var(--card-title-font-size);
+    font-weight: 600;
 }
