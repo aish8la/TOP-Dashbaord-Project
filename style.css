@@ -1,8 +1,9 @@
 :root {
-    --main-font-size: 16px;
-    --svg-size: 1em;
-    --side-menu: 1em;
-    --logo-svg: 1.5em;
+    --main-font-size: 1rem;
+    --svg-size: clamp(16px, var(--main-font-size), 18px);
+    --side-menu: clamp(10px, var(--main-font-size), 18px);
+    --side-title: clamp(16px, calc(1rem + 6px), 22px);
+    --logo-svg: clamp(16px, 1.5rem, 30px);
     --card-title-font-size: calc(1em - 3px);
     --card-text-font-size: calc(1em - 4px);
 }
@@ -14,13 +15,13 @@
 }
 
 html {
-    font-size: var(--main-font-size);
+    font-size: 16px;
+    width: 100%;
 }
 
 .page-grid {
     display: grid;
-    grid-template-columns: 14em 4fr;
-    grid-template-rows: calc(6em + 45px) 3fr;
+    grid-template-columns: minmax(calc(var(--main-font-size) + 185px), .75fr) 4fr;
     font-family: "Roboto", sans-serif;
 }
 
@@ -33,7 +34,8 @@ html {
     padding: 20px;
     display: grid;
     grid-template-columns: var(--logo-svg) 1fr;
-    gap: 15px;
+    row-gap: 15px;
+    column-gap: 8px;
     align-items: center;
     grid-auto-rows: var(--logo-svg);
 }
@@ -73,7 +75,7 @@ html {
 }
 
 .title {
-    font-size: calc(1em + 6px);
+    font-size: var(--side-title);
     color: white;
 }
 
@@ -103,6 +105,7 @@ html {
 .user {
     display: flex;
     align-items: center;
+    gap: 15px;
 }
 
 
@@ -120,20 +123,20 @@ html {
 }
 
 .searchbar {
-    flex-grow: 1;
+    flex: 0 1 65%;
     border: none;
+    margin-left: -8px;
     background-color: #e2e8f0;
     border-radius: 20px;
-    margin-left: calc(1em - 4px);
-    height: 2em;
+    height: min(calc(var(--main-font-size) + 20px), 30px);
+    padding: 2px 10px;
 }
 
 .notifications {
-    margin-left: 3em;
+    margin-left: auto;
 }
 
 .user {
-    margin-left: 1em;
     font-size: 1em;
     color: black;
     font-weight: 500;
@@ -156,7 +159,6 @@ html {
 .header-bottom-row {
     justify-content: space-between;
     margin-top: 15px;
-    gap: 15px;
 }
 
 .greeting-logo {
