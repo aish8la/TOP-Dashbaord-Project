@@ -250,12 +250,12 @@ html {
     margin-top: 15px;
 }
 
-.announcements {
+.announcements-container {
     grid-column: 2 / 3;
     grid-row: 1 / 2;
 }
 
-.trending {
+.trending-container {
     grid-column: 2 / 3;
     grid-row: 2 / 3;
 
@@ -299,6 +299,10 @@ html {
     font-size: var(--card-text-font-size);
     font-weight: 400;
 }
+
+
+
+
 
 .trend-name {
     font-size: var(--card-title-font-size);
