@@ -91,10 +91,9 @@ html {
     grid-row: 2 / 3;
     grid-column: 2 / 3;
     display: grid;
-    grid-column: 3fr 1fr;
-    grid-row: 1fr 1fr;
+    grid-template-columns: 3fr 1fr;
     margin: 30px 20px 30px 20px;
-    gap: 15px;
+    gap: 20px;
 }
 
 .main-ctn {
@@ -242,13 +241,19 @@ html {
     grid-row: 1 / 3;
 }
 
+.projects,
+.announcements-container,
+.trending-container {
+    display: grid;
+    row-gap: 10px;
+    grid-template-rows: 24px;
+}
+
 .project-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 42%));
-    grid-template-rows: repeat(3, minmax(200px, 1fr));
-    grid-auto-rows: minmax(150px, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(49%, 1fr));
+    grid-auto-rows: minmax(50px, 1fr);
     gap: 15px;
-    margin-top: 15px;
 }
 
 .announcements-container {
@@ -259,7 +264,6 @@ html {
 .trending-container {
     grid-column: 2 / 3;
     grid-row: 2 / 3;
-
 }
 
 .card-btns {
@@ -286,10 +290,11 @@ html {
     background-color: white;
     padding: 20px;
     border-radius: 5px;
-    margin-top: 15px;
     display: grid;
     grid-template-columns: 1fr;
     row-gap: 10px;
+    justify-content: start;
+    align-content: start;
 }
 
 .announcement-title {
@@ -302,6 +307,7 @@ html {
     color: #606060;
     font-size: var(--card-text-font-size);
     font-weight: 400;
+    margin-top: 5px;
 }
 
 a.announcement:nth-child(even) {
