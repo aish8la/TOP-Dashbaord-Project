@@ -152,7 +152,9 @@ html {
 }
 
 .side-menu-item,
-.user {
+.user,
+.trend,
+.announcement {
     text-decoration: none;
 }
 
@@ -230,6 +232,7 @@ html {
 
 .card-text {
     font-size: var(--card-text-font-size);
+    font-weight: 400;
     color: #606060;
 }
 
@@ -284,3 +287,28 @@ html {
     border-radius: 5px;
     margin-top: 15px;
 }
+
+.announcement-title {
+    color: black;
+    font-weight: 500;
+    font-size: var(--card-title-font-size);
+}
+
+.announcement-text {
+    color: #606060;
+    font-size: var(--card-text-font-size);
+    font-weight: 400;
+}
+
+.trend-name {
+    font-size: var(--card-title-font-size);
+    color: black;
+    font-weight: 400;
+}
+
+.trend-signature {
+    font-size: var(--card-text-font-size);
+    color: #606060;
+    font-weight: 400;
+}
+
