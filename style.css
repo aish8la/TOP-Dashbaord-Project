@@ -146,7 +146,7 @@ html {
 .user-icon {
     width: 32px;
     height: 32px;
-    border: 1px solid black;
+    object-fit: contain;
     border-radius: 50%;
     aspect-ratio: 1 / 1;
 }
@@ -165,11 +165,11 @@ html {
 
 
 .greeting-logo {
-    border: 1px solid black;
     border-radius: 50%;
     height: 50px;
     width: 50px;
     aspect-ratio: 1 / 1;
+    object-fit: contain;
 }
 
 .user-greetings {
@@ -322,3 +322,15 @@ a.announcement:nth-child(even) {
     font-weight: 400;
 }
 
+.trend {
+    display: flex;
+    gap: 10px;
+}
+
+.trend > img {
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    aspect-ratio: 1 / 1;
+    object-fit: contain
+}
