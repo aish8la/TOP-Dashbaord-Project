@@ -286,6 +286,9 @@ html {
     padding: 20px;
     border-radius: 5px;
     margin-top: 15px;
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 10px;
 }
 
 .announcement-title {
@@ -300,9 +303,12 @@ html {
     font-weight: 400;
 }
 
-
-
-
+a.announcement:nth-child(even) {
+    border-top: 1px solid #606060;
+    border-bottom: 1px solid #606060;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
 
 .trend-name {
     font-size: var(--card-title-font-size);
